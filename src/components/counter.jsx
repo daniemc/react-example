@@ -7,8 +7,8 @@ class Counter extends Component {
   }
 
   getBadgeClasses() {
-    let classes = "badge m-2 badge-";
-    classes += this.props.counter.qty === 0 ? "warning" : "primary";
+    let classes = "";
+    classes += this.props.counter.qty === 0 ? "" : "";
     return classes;
   }
 
@@ -18,13 +18,13 @@ class Counter extends Component {
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           onClick={() => this.props.onIncrementCounter(this.props.counter)}
-          className="btn btn-secondary btn-sm"
+          className=""
         >
           Incrementar
         </button>
         <button
           onClick={() => this.props.onDeleteQty(this.props.counter.id)}
-          className="btn btn-danger btn-sm m-2"
+          className=""
         >
           Eliminar
         </button>

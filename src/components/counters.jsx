@@ -11,7 +11,7 @@ class Counters extends Component {
 
     return (
       <div>
-        <button onClick={onResetQty} className="btn btn-warning btn-sm m-2">
+        <button onClick={onResetQty} className="">
           Restablecer valores
         </button>
         {counters.length > 0 &&
