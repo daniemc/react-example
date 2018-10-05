@@ -1,3 +1,30 @@
 .container {
   padding: 25px;
 }
+
+.btn {
+  font-weight: 700;
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-pri {
+  background-color: #ff7c02;
+  color: #253030;
+}
+
+.btn-sec {
+  background-color: #253030;
+  color: #fff;
+}
+
+.btn-trh {
+  background-color: #696e6e;
+  color: #fff;
+}

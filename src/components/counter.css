@@ -1,0 +1,9 @@
+.counter {
+  display: flex;
+}
+
+.bdg {
+  min-width: 35px;
+  text-align: center;
+  font-weight: 600;
+}

@@ -11,18 +11,20 @@ class Counters extends Component {
 
     return (
       <div>
-        <button onClick={onResetQty} className="">
+        <button onClick={onResetQty} className="btn btn-trh">
           Restablecer valores
         </button>
-        {counters.length > 0 &&
-          counters.map(counter => (
-            <Counter
-              key={counter.id}
-              counter={counter}
-              onIncrementCounter={onIncrementCounter}
-              onDeleteQty={onDeleteQty}
-            />
-          ))}
+        <div className="counters-group">
+          {counters.length > 0 &&
+            counters.map(counter => (
+              <Counter
+                key={counter.id}
+                counter={counter}
+                onIncrementCounter={onIncrementCounter}
+                onDeleteQty={onDeleteQty}
+              />
+            ))}
+        </div>
       </div>
     );
   }

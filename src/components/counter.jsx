@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./counter.css";
 
 class Counter extends Component {
   formatCount() {
@@ -14,17 +15,17 @@ class Counter extends Component {
 
   render() {
     return (
-      <div>
-        <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
+      <div className="counter">
+        <p className={`bdg ${this.getBadgeClasses()}`}>{this.formatCount()}</p>
         <button
           onClick={() => this.props.onIncrementCounter(this.props.counter)}
-          className=""
+          className="btn btn-pri"
         >
           Incrementar
         </button>
         <button
           onClick={() => this.props.onDeleteQty(this.props.counter.id)}
-          className=""
+          className="btn btn-sec"
         >
           Eliminar
         </button>
